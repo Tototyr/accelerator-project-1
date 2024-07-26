@@ -7,6 +7,7 @@ import { initializePriceTabs } from './price-tab';
 
 const bootStrap = () => {
   initializePriceTabs();
+
 };
 
 bootStrap();

@@ -13,6 +13,8 @@
 @import "global/button";
 @import "global/global";
 
+// Vendor //
+@import "vendor/swiper";
 
 // Blocks //
 @import "blocks/hero";
@@ -21,3 +23,5 @@
 @import "blocks/subsriptions";
 @import "blocks/card";
 @import "blocks/games";
+@import "blocks/juri";
+@import "blocks/features";

@@ -28,7 +28,7 @@
 }
 
 .container--none-tablet {
-  @media (min-width: variables.$pre-tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     display: contents;
   }
 }

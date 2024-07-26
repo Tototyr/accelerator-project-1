@@ -1,0 +1,268 @@
+@use "../global/variables";
+
+.features {
+  background-color: variables.$bg-additional-color;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.features__title {
+  margin-bottom: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  p {
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  li:not(:has(div)) article {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  li:not(:has(div)) h3 {
+    clip: rect(0 0 0 0);
+    position: absolute;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  li:not(:has(div)) p:first-of-type {
+    margin-bottom: 5px;
+  }
+
+  li:not(:has(div)) p:nth-of-type(2) {
+    margin-bottom: 20px;
+  }
+
+  li:not(:has(div)) p:nth-of-type(2) span {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+  }
+
+  li:has(div) p:first-of-type span {
+    background: linear-gradient(129deg, #d10a42 0%, #0041ca 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  li:has(div) p:nth-of-type(2) span {
+    color: #2e35ac;
+  }
+
+  li:has(div) h3 {
+    margin-bottom: 12px;
+  }
+
+  p:first-of-type span:first-of-type {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  span:last-of-type {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  li:not(:has(div)) {
+    background-color: variables.$primary-dark-blue-color;
+    color: variables.$primary-white-color;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 30px;
+
+
+    article div {
+      text-align: start;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    p:first-of-type span:first-of-type {
+      font-size: 70px;
+      line-height: 70px;
+    }
+
+    span:last-of-type {
+      line-height: 22px;
+    }
+
+    li {
+      max-width: 324px;
+    }
+
+    li:not(:has(div)) {
+      min-width: 325px;
+      max-width: 325px;
+    }
+
+    li:not(:has(div)) article {
+      padding-top: 35px;
+      padding-bottom: 35px;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+
+    li:not(:has(div)) span:nth-of-type(2) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    li:not(:has(div)) p:first-of-type {
+      margin-bottom: 25px;
+    }
+
+    li:not(:has(div)) p:nth-of-type(2) {
+      margin-bottom: 25px;
+    }
+
+    li:not(:has(div)) p:nth-of-type(2) span {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    li:has(div) article {
+      display: flex;
+      gap: 14px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 80px 40px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      content: "";
+      height: 2px;
+      width: 360px;
+      background-color: rgba(209, 10, 66, 0.2);
+    }
+
+    &::after {
+      right: 0;
+    }
+
+    li,
+    li:not(:has(div)) {
+      max-width: none;
+    }
+
+    li:nth-of-type(2) {
+      grid-column: 3 / 4;
+    }
+
+
+    li:not(:has(div)) {
+      grid-column: 2 / 3;
+      grid-row: 1 / -1;
+    }
+
+    li:nth-of-type(4) {
+      grid-column: 2 / 1;
+    }
+
+    li:nth-of-type(5) {
+      grid-column: 3 / -1;
+    }
+
+    li:not(:has(div)) article {
+      padding-top: 58px;
+      padding-bottom: 58px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    h3 {
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    li:not(:has(div)) p:first-of-type {
+      margin-bottom: 10px;
+    }
+
+    li:not(:has(div)) p:nth-of-type(2) {
+      margin-bottom: 30px;
+    }
+
+    li:not(:has(div)) p:nth-of-type(2) span {
+      font-size: 26px;
+      line-height: 26px;
+    }
+
+    li:has(div) h3 {
+      margin-bottom: 8px;
+    }
+  }
+
+  @media (max-width: variables.$pre-tablet-width) {
+    article {
+      margin: 0 auto;
+      min-width: variables.$phone-width;
+      max-width: variables.$phone-width;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    li:nth-of-type(1) article,
+    li:nth-of-type(4) article {
+      margin-bottom: 35px;
+    }
+
+    li:nth-of-type(2) article,
+    li:not(:has(div)) article {
+      margin-bottom: 40px;
+    }
+
+    li:has(div) div {
+      margin-bottom: 12px;
+    }
+  }
+}
