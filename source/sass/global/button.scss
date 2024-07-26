@@ -21,6 +21,11 @@
   border-color: variables.$primary-white-color;
 }
 
+.button--secondary {
+  color: variables.$primary-dark-color;
+  border: 2px solid variables.$primary-dark-color;
+}
+
 .button--accent {
   border: 1px solid rgba(16, 38, 84, 0.2);
 }
