@@ -1,6 +1,13 @@
 @use "../global/variables";
 @use "../global/mixins";
 
+
+.gym {
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 85px;
+  }
+}
+
 .gym__title {
   margin-bottom: 11px;
 
@@ -89,6 +96,7 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, -72%);
+    margin-bottom: 35px;
 
     &::after {
       width: 270px;
@@ -97,6 +105,7 @@
 
   @media (min-width: variables.$desktop-width) {
     transform: translate(-50%, 124%);
+    margin-bottom: 125px;
 
     &::after {
       width: 360px;
@@ -238,5 +247,6 @@
   @media (min-width: variables.$desktop-width) {
     display: flex;
     gap: 0 145px;
+    margin-bottom: 120px;
   }
 }
