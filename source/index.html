@@ -139,8 +139,36 @@
 
 
 
-  <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
+  <section class="games container" data-test="games">
+    <h2 class="visually-hidden">Супер игры</h2>
+    <article class="games__card">
+      <h3 class="games__title">Super<br>Games</h3>
+      <dl class="games__info-list">
+        <dt class="games__info-title">Дата</dt>
+        <dd class="games__info-value">
+          <span class="games__info-number">7</span> <span class="games__info-description">Марта<br>2019</span>
+        </dd>
+        <dt class="games__info-title">Время</dt>
+        <dd class="games__info-value">
+          <span class="games__info-number">12:00</span>
+        </dd>
+      </dl>
+      <p class="games__description">Ежегодные соревнования по CrossFit</p>
+      <a class="button button--primary games__button" href="#" draggable="false">Заполнить заявку</a>
+    </article>
+    <div class="games__image-wrapper">
+      <picture>
+        <source type="image/webp" media="(min-width: 1366px)" srcset="img/games/games_preview-desktop@1x.webp 1x, img/games/games_preview-desktop@2x.webp 2x" width="660" height="500">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/games/games_preview-tablet@1x.webp 1x, img/games/games_preview-tablet@2x.webp 2x" width="378" height="348">
+        <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/games/games_preview-desktop@1x.png 1x, img/games/games_preview-desktop@2x.png 2x" width="660" height="500">
+        <source type="image/jpeg" media="(min-width: 768px)" srcset="img/games/games_preview-tablet@1x.png 1x, img/games/games_preview-tablet@2x.png 2x" width="378" height="348">
+        <source type="image/webp" media="(max-width: 767px)" srcset="img/games/games_preview-mobile@1x.webp 1x, img/games/games_preview-mobile@2x.webp 2x" width="290" height="290">
+        <img class="games__image" src="img/games/games_preview-mobile@1x.png" alt="Любитель экстремальной зимней рыбалки." width="290" height="290" draggable="false">
+      </picture>
+    </div>
+  </section>
+
+  <div data-test="juri">juri</div>
     <div data-test="features">features</div>
     <div data-test="offers">offers</div>
     <div data-test="faq">faq</div>
