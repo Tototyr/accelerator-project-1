@@ -85,8 +85,61 @@
 
 
 
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
+  <section class="subscriptions" data-test="price" id="subscriptions">
+    <div class="subscriptions__container container">
+      <h2 class="subscriptions__title title">Абонементы</h2>
+      <ul class="subscriptions__tab-list">
+        <li class="subscriptions__tab subscriptions__tab--active" tabindex="0">1 месяц</li>
+        <li class="subscriptions__tab" tabindex="0">6 месяцев</li>
+        <li class="subscriptions__tab" tabindex="0">12 месяцев</li>
+      </ul>
+      <ul class="subscriptions__card-list">
+        <li class="subscriptions__card-item">
+          <article class="subscriptions__card">
+            <h3 class="subscriptions__card-title">С тренером</h3>
+            <p class="subscriptions__card-details">12 занятий</p>
+            <p class="subscriptions__card-price">
+              <span class="subscriptions__card-price-value" aria-hidden="true">5000</span>
+              <span class="subscriptions__card-price-text">5000</span><img class="subscriptions__card-price-currency" width="70" height="41" src="/__spritemap#sprite-icon_rouble-view" alt="Рубль">
+            </p>
+            <a class="button subscriptions__card-button button-secondary" href="#" draggable="false">
+              <span class="subscriptions__card-button-text">Купить абонемент</span>
+            </a>
+          </article>
+        </li>
+        <li class="subscriptions__card-item">
+          <article class="subscriptions__card subscriptions__card--highlighted">
+            <h3 class="subscriptions__card-title">Дневной</h3>
+            <p class="subscriptions__card-details">с 8:00 до 17:00</p>
+            <p class="subscriptions__card-price">
+              <span class="subscriptions__card-price-value" aria-hidden="true">1700</span>
+              <span class="subscriptions__card-price-text">1700</span><img class="subscriptions__card-price-currency" width="70" height="41" src="/__spritemap#sprite-icon_rouble-view" alt="Рубль">
+            </p>
+            <a class="button subscriptions__card-button button-secondary" href="#" draggable="false">
+              <span class="subscriptions__card-button-text">Купить абонемент</span>
+            </a>
+          </article>
+        </li>
+        <li class="subscriptions__card-item">
+          <article class="subscriptions__card">
+            <h3 class="subscriptions__card-title">Полный день</h3>
+            <p class="subscriptions__card-details">с 8:00 до 22:00</p>
+            <p class="subscriptions__card-price">
+              <span class="subscriptions__card-price-value" aria-hidden="true">2700</span>
+              <span class="subscriptions__card-price-text">2700</span><img class="subscriptions__card-price-currency" width="70" height="41" src="/__spritemap#sprite-icon_rouble-view" alt="Рубль">
+            </p>
+            <a class="button button--secondary subscriptions__card-button" href="#" draggable="false">
+              <span class="subscriptions__card-button-text">Купить абонемент</span>
+            </a>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+
+  <div data-test="games">games</div>
     <div data-test="juri">juri</div>
     <div data-test="features">features</div>
     <div data-test="offers">offers</div>
