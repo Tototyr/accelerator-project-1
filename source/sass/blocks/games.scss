@@ -1,0 +1,227 @@
+@use "../global/variables";
+@use "../global/mixins";
+
+
+.games {
+  color: variables.$primary-white-color;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    padding-top: 57px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.games__card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+  background-color: variables.$bg-banner-color;
+  padding: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    justify-content: flex-start;
+    gap: 8px 20px;
+    width: 300px;
+  }
+
+
+  .games__info-number {
+    @include mixins.font-style(variables.$primary-font, 24px, 24px, 700);
+
+    @media (min-width: variables.$tablet-width) {
+      padding-left: 2px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      @include mixins.font-style(variables.$primary-font, 40px, 40px, 700);
+      padding-left: 5px;
+    }
+  }
+
+
+
+
+  @media (min-width: variables.$desktop-width) {
+    justify-content: space-between;
+    gap: 30px;
+    width: 500px;
+    padding-top: 60px;
+    padding-bottom: 98px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+.games__title {
+
+  @include mixins.font-style(variables.$secondary-font, 48px, 54px, 600);
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: variables.$desktop-width) {
+    @include mixins.font-style(variables.$secondary-font, 82px, 96px, 600);
+  }
+}
+
+.games__info-list {
+  margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 100px;
+  }
+}
+
+.games__info-title {
+
+  @include mixins.font-style(variables.$primary-font, 16px, 20px, 300);
+  position: relative;
+  margin-bottom: 5px;
+
+
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: variables.$primary-white-color;
+    bottom: -2px;
+    left: 0;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.font-style(variables.$primary-font, 18px, 24px, 300);
+    padding-left: 3px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-left: 5px;
+    margin-bottom: 13px;
+
+    &::after {
+      content: "";
+      height: 1px;
+      width: 100%;
+      bottom: -7px;
+      left: 5px;
+    }
+  }
+
+
+}
+
+.games__info-value {
+  @include mixins.font-style(variables.$primary-font, 12px, 12px, 400);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin: 0;
+  margin-bottom: 5px;
+
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.font-style(variables.$primary-font, 14px, 22px, 400);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 9px;
+    &:last-child {    margin-bottom: 0;}
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    @include mixins.font-style(variables.$primary-font, 14px, 22px, 400);
+    margin-bottom: 19px;
+  }
+}
+
+.games__number {
+  @include mixins.font-style(variables.$primary-font, 24px, 24px, 700);
+
+
+  @media (min-width: variables.$desktop-width) {
+    @include mixins.font-style(variables.$primary-font, 40px, 40px, 700);
+  }
+}
+
+.games__description {
+
+  @include mixins.font-style(variables.$primary-font, 16px, 20px, 300);
+  width: 173px;
+  margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+
+    @include mixins.font-style(variables.$primary-font, 18px, 24px, 300);
+    width: 220px;
+    padding-right: 9px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 340px;
+    padding: 0;
+  }
+}
+
+.games__button {
+  min-height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: variables.$primary-white-color;
+    color: variables.$additional-accent-color;
+  }
+
+  &:focus-visible {
+    outline: 2px solid transparent;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: variables.$additional-accent-color;
+    border: 2px solid #000000;
+  }
+
+  &:active {
+    color: variables.$primary-dark-color;
+    background-color: variables.$primary-white-color;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    min-height: 66px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.games__button--disabled {
+  opacity: 0.5;
+  cursor: none;
+  pointer-events: none;
+}
+
+.games__image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.games__image {
+  max-width: 100%;
+  height: auto;
+}
