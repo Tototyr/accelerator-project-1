@@ -443,7 +443,64 @@
       </ul>
     </div>
   </section>
-    <div data-test="offers">offers</div>
+  <section class="promotion" data-test="offers" id="promotion">
+    <div class="container container--none">
+      <div class="container container--none-tablet">
+        <h2 class="promotion__title title">Акции</h2>
+      </div>
+      <div class="promotion__preview-container">
+        <div class="promotion__preview">
+          <div class="promotion__card">
+            <div class="promotion__card-content">
+              <h3 class="promotion__card-title">Год</h3>
+              <p class="promotion__card-price"><span class="promotion__card-price-value">4999</span></p>
+              <p class="promotion__card-description">Безлимитный абонемент<br>в тренажёрный зал</p>
+              <a class="promotion__card-link" href="#" draggable="false">Подробнее</a>
+            </div>
+          </div>
+
+          <div class="promotion__image-container">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)"
+                      srcset="img/promotion/promotion_desktop@1x.webp 1x, img/promotion/promotion_desktop@2x.webp 2x" width="280"
+                      height="460">
+              <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/promotion/promotion-tablet@1x.webp 1x, img/promotion/promotion-tablet@2x.webp 2x" width="400"
+                      height="462">
+              <source type="image/jpeg" media="(min-width: 1366px)"
+                      srcset="img/promotion/promotion_desktop@1x.png 1x, img/promotion/promotion_desktop@2x.png 2x" width="280"
+                      height="460">
+              <source type="image/jpeg" media="(min-width: 768px)"
+                      srcset="img/promotion/promotion-tablet@1x.png 1x, img/promotion/promotion-tablet@2x.png 2x" width="400"
+                      height="462">
+              <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/promotion/promotion_mobile@1x.webp 1x, img/promotion/promotion_mobile@2x.webp 2x" width="320"
+                      height="360">
+              <img class="promotion__image" src="img/promotion/promotion_mobile@1x.png" alt="Фотография женщины на фоне неба."
+                   width="320" height="360" draggable="false">
+            </picture>
+          </div>
+        </div>
+        <div class="container container--none-tablet">
+          <ul class="promotion__list">
+            <li class="promotion__item">
+              <h3 class="promotion__item-title">Месяц бесплатно</h3>
+              <p class="promotion__item-description">Приведи друга, получи абонемент в подарок</p>
+              <a class="promotion__card-link promotion__card-link--secondary " href="#"
+                 draggable="false">Подробнее</a>
+            </li>
+            <li class="promotion__item">
+              <h3 class="promotion__item-title">Скидка 20%</h3>
+              <p class="promotion__item-description">Корпоративный фитнес с командой</p>
+              <a class="promotion__card-link promotion__card-link--secondary " href="#"
+                 draggable="false">Подробнее</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
     <div data-test="faq">faq</div>
     <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
