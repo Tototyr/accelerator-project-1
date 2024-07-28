@@ -1,0 +1,160 @@
+@use "../global/variables";
+@use "../global/mixins";
+
+.lesson-signup {
+  background-color: variables.$primary-dark-blue-color;
+  color: variables.$primary-white-color;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-color: transparent;
+    width: 683px;
+  }
+}
+
+
+
+.lesson-signup__input::placeholder {
+  @include mixins.font-style(variables.$primary-font, 14px, 22px, 400);
+  text-align: left;
+
+}
+
+.lesson-signup__container {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    align-items: flex-start;
+    min-width: 0;
+    max-width: none;
+  }
+}
+
+.lesson-signup__title {
+  margin-bottom: 36px;
+
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.font-style(variables.$secondary-font, 54px, 54px, 600);
+  }
+}
+
+.lesson-signup__input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-bottom: 36px;
+
+  @media (min-width: variables.$tablet-width) {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.lesson-signup__input-group {
+  position: relative;
+}
+
+.lesson-signup__input {
+  color: variables.$primary-white-color;
+  @include mixins.font-style(variables.$primary-font, 11px, 22px, 400);
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #74819c;
+  width: 100%;
+  height: 27px;
+  transition: border-bottom 0.5s ease-in-out;
+
+  &:hover {
+    border-bottom: 1px solid variables.$primary-white-color;
+  }
+
+  &:focus-visible {
+    outline: 1px solid variables.$primary-white-color;
+    outline-offset: 10px;
+    border-bottom: 1px solid transparent;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.font-style(variables.$primary-font, 10px, 22px, 400);
+    width: 205px;
+    height: 26px;
+    padding: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 223px;
+    height: 26px;
+    @include mixins.font-style(variables.$primary-font, 10px, 22px, 400);
+    padding: 0;
+  }
+}
+
+.lesson-signup__input--error {
+  border-bottom-color: variables.$error-color;
+}
+
+.lesson-signup__input::placeholder {
+  color: #74819c;
+}
+
+.lesson-signup__error {
+  display: none;
+  color: variables.$error-color;
+  width: 205px;
+  margin: 0;
+}
+
+.lesson-signup__button {
+  min-width: 100%;
+  min-height: 60px;
+
+  &:hover {
+    background-color: variables.$primary-white-color;
+    color: variables.$additional-accent-color;
+  }
+
+  &:focus-visible {
+    outline: 2px solid transparent;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: variables.$additional-accent-color;
+    border: 2px solid #000000;
+  }
+
+  &:active {
+    color: variables.$primary-dark-color;
+    background-color: variables.$primary-white-color;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    min-width: 440px;
+    min-height: 66px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    min-width: 477px;
+  }
+}
+
+.lesson-signup__button--disabled {
+  opacity: 0.5;
+  cursor: none;
+  pointer-events: none;
+}
+
+

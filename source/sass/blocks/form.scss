@@ -1,0 +1,19 @@
+@use "../global/variables";
+
+.form-gradient {
+  @media (min-width: variables.$desktop-width) {
+    background-image: linear-gradient(to right, #1c3374 0%, #1c3374 50%, #1c3374 50%, #ffffff 50%, #ffffff 100%);
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+.form-desktop-wrapper {
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 1250px;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+}

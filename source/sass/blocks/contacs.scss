@@ -1,0 +1,105 @@
+@use "../global/variables";
+@use "../global/mixins";
+
+.company-contacts {
+  padding-top: 37px;
+  padding-bottom: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    align-items: flex-start;
+    min-width: 0;
+    max-width: 100%;
+    padding-bottom: 71px;
+    margin: 0;
+  }
+}
+
+.company-contacts__title {
+  margin-bottom: 35px;
+
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.font-style(variables.$secondary-font, 54px, 54px, 400);
+    margin-bottom: 36px;
+  }
+}
+
+.company-contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 61px;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: "";
+      width: 1px;
+      height: 100%;
+      background-color: #74819c;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 15px 130px;
+
+    &:after {
+      left: 51%;
+    }
+  }
+}
+
+.company-contacts__group {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 15px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 15px;
+    margin-right: -1px;
+  }
+}
+
+.company-contacts__item-title {
+  @include mixins.font-style(variables.$primary-font, 20px, 20px, 400);
+  margin: 0 0 12px 0;
+
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.font-style(variables.$primary-font, 24px, 24px, 400);
+    margin-bottom: 5px;
+  }
+}
+
+.company-contacts__item-description {
+  display: block;
+  @include mixins.font-style(variables.$primary-font, 14px, 20px, 400);
+  text-decoration: none;
+  color: variables.$primary-dark-color;
+  margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    line-height: 22px;
+  }
+}
