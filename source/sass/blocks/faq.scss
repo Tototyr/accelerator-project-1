@@ -72,6 +72,7 @@
   min-width: 140px;
   min-height: 46px;
   padding: 5px 20px;
+  color: variables.$primary-dark-color;
   transition: color 0.3s ease-in, border 0.3s ease;
 
   span {

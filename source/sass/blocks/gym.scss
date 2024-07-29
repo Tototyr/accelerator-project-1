@@ -42,7 +42,7 @@
   @include mixins.font-style(variables.$primary-font, 18px, 20px, 400);
 
   margin: 0;
-  padding-bottom: 36px;
+  padding-bottom: 37px;
 
   @media (min-width: variables.$tablet-width) {
     @include mixins.font-style(variables.$primary-font, 20px, 20px, 400);

@@ -58,6 +58,11 @@
   }
 }
 
+.subscriptions__card--highlighted:hover {
+    border: 7px solid transparent;
+    border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%) 1;
+}
+
 .subscriptions__tab-list {
   position: relative;
   display: flex;
@@ -111,6 +116,7 @@
       background-color: #787878;
     }
   }
+
 
   &:focus-visible,
   &:active {
