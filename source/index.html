@@ -146,7 +146,7 @@
       <dl class="games__info-list">
         <dt class="games__info-title">Дата</dt>
         <dd class="games__info-value">
-          <span class="games__info-number">7</span> <span class="games__info-description">Марта<br>2019</span>
+          <span class="games__info-number">7</span><span class="games__info-description">Марта<br>2019</span>
         </dd>
         <dt class="games__info-title">Время</dt>
         <dd class="games__info-value">
@@ -189,7 +189,7 @@
                   <source type="image/jpeg" media="(max-resolution: 2dppx)"
                           srcset="img/juri/juri_1@1x.png 1x, img/juri/juri_1@2x.png 2x" width="260" height="300">
                   <img class="juri__image" src="img/juri/juri_1@1x.png" alt="Фотография тренера." width="260"
-                       height="300">
+                       height="301">
                 </picture>
                 <figcaption class="juri__name">Анна Павлова</figcaption>
               </figure>
@@ -213,7 +213,7 @@
                   <source type="image/jpeg" media="(max-resolution: 2dppx)"
                           srcset="img/juri/juri_2@1x.png 1x, img/juri/juri_2@2x.png 2x" width="260" height="300">
                   <img class="juri__image" src="img/juri/juri_2@1x.png" alt="Фотография тренера." width="260"
-                       height="300">
+                       height="301">
                 </picture>
                 <figcaption class="juri__name">Алексей Лавров</figcaption>
               </figure>
@@ -237,7 +237,7 @@
                   <source type="image/jpeg" media="(max-resolution: 2dppx)"
                           srcset="img/juri/juri_3@1x.png 1x, img/juri/juri_3@2x.png 2x" width="260" height="300">
                   <img class="juri__image" src="img/juri/juri_3@1x.png" alt="Фотография тренера." width="260"
-                       height="300">
+                       height="301">
                 </picture>
                 <figcaption class="juri__name">Александр Пашков</figcaption>
               </figure>
@@ -501,33 +501,172 @@
     </div>
   </section>
 
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-
-
-  <div class="form-gradient" data-test="form">
-    <div class="form-desktop-wrapper">
-        <section class="lesson-signup">
-          <div class="lesson-signup__container container">
-            <h2 class="lesson-signup__title title">Бесплатное занятие</h2>
-            <form class="lesson-signup__form" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="lesson-signup__input-container">
-                <div class="lesson-signup__input-group">
-                  <label class="visually-hidden" for="name">Имя</label>
-                  <input class="lesson-signup__input lesson-signup__name" type="text" name="name" id="name" placeholder="Имя" required>
-                  <p class="lesson-signup__error lesson-signup__name-error"></p>
-                </div>
-                <div class="lesson-signup__input-group">
-                  <label class="visually-hidden" for="phone">Телефон</label>
-                  <input class="lesson-signup__input lesson-signup__phone" type="tel" name="phone" id="phone" placeholder="Телефон" required>
-                  <p class="lesson-signup__error lesson-signup__phone-error"></p>
-                </div>
+  <section class="faq" data-test="faq">
+    <div class="container">
+      <h2 class="faq__title title">Вопросы и ответы</h2>
+      <div class="faq__accordion">
+        <ul class="faq__tab-list">
+          <li class="faq__tab-item">
+            <button class="button faq__tab-button button--accent faq__tab-button--active" type="button"
+                    data-faq-list="description"><span>Центр</span></button>
+          </li>
+          <li class="faq__tab-item">
+            <button class="button faq__tab-button
+          button--accent" type="button" data-faq-list="subscription"><span>Абонемент</span></button>
+          </li>
+          <li class="faq__tab-item">
+            <button class="button faq__tab-button
+          button--accent" type="button" data-faq-list="services"><span>Услуги</span></button>
+          </li>
+          <li class="faq__tab-item">
+            <button class="button faq__tab-button
+          button--accent" type="button" data-faq-list="rules"><span>Правила</span></button>
+          </li>
+        </ul>
+        <div class="faq__details-lists-container">
+          <ul class="faq__details-list faq__details-list--active" data-faq-list="description">
+            <li tabindex="0">
+              <div class="faq__details-list-marker-container">
+                <div class="faq__details-list-marker faq__details-list-marker--active"></div>
               </div>
-              <button class="lesson-signup__button button button--primary" type="submit">Отправить</button>
-            </form>
-          </div>
-        </section>
-        <section class="company-contacts container">
+              <h3>Как стать членом<br> фитнес-центра?</h3>
+              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету<br> и подписать договор.
+                При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+            </li>
+            <li tabindex="0">
+              <div class="faq__details-list-marker-container">
+                <div class="faq__details-list-marker"></div>
+              </div>
+              <h3>Где можно посмотреть расписание?</h3>
+              <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть
+                возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую
+                неделю.</p>
+            </li>
+            <li tabindex="0">
+              <div class="faq__details-list-marker-container">
+                <div class="faq__details-list-marker"></div>
+              </div>
+              <h3>Есть кулеры в центре? Предоставляются<br> полотенца?</h3>
+              <p>Для персонала.</p>
+            </li>
+            <li tabindex="0">
+              <div class="faq__details-list-marker-container">
+                <div class="faq__details-list-marker"></div>
+              </div>
+              <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
+              <p>Много. Наивысшая.</p>
+            </li>
+          </ul>
+          <ul class="faq__details-list" data-faq-list="subscription">
+            <li tabindex="0">
+              <div class="faq__details-list-marker-container">
+                <div class="faq__details-list-marker"></div>
+              </div>
+              <h3>Занятия с тренером входят в абонемент?</h3>
+              <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
+                присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
+                тренажеру или технике выполнения упражнения.</p>
+            </li>
+            <li tabindex="0">
+              <div class="faq__details-list-marker-container">
+                <div class="faq__details-list-marker"></div>
+              </div>
+              <h3>Можно ли заморозить абонемент?</h3>
+              <p>Нельзя.</p>
+            </li>
+            <li tabindex="0">
+              <div class="faq__details-list-marker-container">
+                <div class="faq__details-list-marker"></div>
+              </div>
+              <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
+              <p>В акциях написано, что ближайшие 5000 лет от начала оформления абонемента.</p>
+            </li>
+            <li tabindex="0">
+              <div class="faq__details-list-marker-container">
+                <div class="faq__details-list-marker"></div>
+              </div>
+              <h3>Что такое семейный доступ и доступ для друзей?</h3>
+              <p>Бесплатный месяц, скидка 20%. Можно приходить с членами семьи, желательно вашей, и друзьями -
+                получите скидку в 1%</p>
+            </li>
+          </ul>
+          <ul class="faq__details-list" data-faq-list="services">
+            <li tabindex="0">
+              <div class="faq__details-list-marker-container">
+                <div class="faq__details-list-marker"></div>
+              </div>
+              <h3>Предлагает ли клуб услуги
+                по консультированию
+                по вопросам питания?</h3>
+              <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
+                данные, цели и предложит программу питания.</p>
+            </li>
+            <li tabindex="0">
+              <div class="faq__details-list-marker-container">
+                <div class="faq__details-list-marker"></div>
+              </div>
+              <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
+              <p>CrossFit'а хватит. Больше не захочется.</p>
+            </li>
+            <li tabindex="0">
+              <div class="faq__details-list-marker-container">
+                <div class="faq__details-list-marker"></div>
+              </div>
+              <h3>Можно ли приобрести в центре спортивное питание?</h3>
+              <p>Только за деньги.</p>
+            </li>
+            <li tabindex="0">
+              <div class="faq__details-list-marker-container">
+                <div class="faq__details-list-marker"></div>
+              </div>
+              <h3>Есть ли в центре детская комната?</h3>
+              <p>Тут есть детский мир этажом ниже. Мы на 25ом.</p>
+            </li>
+          </ul>
+          <ul class="faq__details-list" data-faq-list="rules">
+            <li tabindex="0">
+              <div class="faq__details-list-marker-container">
+                <div class="faq__details-list-marker"></div>
+              </div>
+              <h3>Есть в фитнес-центре дресс-код?</h3>
+              <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя
+                и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты,
+                кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и
+                т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
+            </li>
+            <li tabindex="0">
+              <div class="faq__details-list-marker-container">
+                <div class="faq__details-list-marker"></div>
+              </div>
+              <h3>Можно ли приводить с собой детей на тренировки?</h3>
+              <p>Если они пойдут в детский мир на 24м.</p>
+            </li>
+            <li tabindex="0">
+              <div class="faq__details-list-marker-container">
+                <div class="faq__details-list-marker"></div>
+              </div>
+              <h3>Какие дополнительные правила посещения центра?</h3>
+              <p>За эпичное смотрение в сторону полагается скидка. Скалируется от времени, потраченного на смотрение,
+                и степени эпичности.</p>
+            </li>
+            <li tabindex="0">
+              <div class="faq__details-list-marker-container">
+                <div class="faq__details-list-marker"></div>
+              </div>
+              <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
+              <p>Нет, но в полне возможно, что после посещения зала понадобится мед. страховка - места мало, а
+                тренажеры
+                включают в себя велосипеды. Обычные велосипеды.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="company-contacts container">
           <h2 class="company-contacts__title title">Контакты</h2>
           <div class="company-contacts__list">
             <div class="company-contacts__group">
@@ -552,8 +691,6 @@
             </div>
           </div>
         </section>
-    </div>
-  </div>
 
 
 
