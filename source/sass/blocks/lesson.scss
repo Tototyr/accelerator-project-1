@@ -19,11 +19,11 @@
 }
 
 
-
 .lesson-signup__input::placeholder {
   @include mixins.font-style(variables.$primary-font, 14px, 22px, 400);
-  text-align: left;
 
+  text-align: left;
+  color: variables.$divider-color;
 }
 
 .lesson-signup__container {
@@ -66,7 +66,9 @@
 
 .lesson-signup__input {
   color: variables.$primary-white-color;
+
   @include mixins.font-style(variables.$primary-font, 11px, 22px, 400);
+
   padding: 0;
   background-color: transparent;
   border: 1px solid transparent;
@@ -92,6 +94,7 @@
 
   @media (min-width: variables.$tablet-width) {
     @include mixins.font-style(variables.$primary-font, 10px, 22px, 400);
+
     width: 205px;
     height: 26px;
     padding: 0;
@@ -100,17 +103,15 @@
   @media (min-width: variables.$desktop-width) {
     width: 223px;
     height: 26px;
+
     @include mixins.font-style(variables.$primary-font, 10px, 22px, 400);
+
     padding: 0;
   }
 }
 
 .lesson-signup__input--error {
   border-bottom-color: variables.$error-color;
-}
-
-.lesson-signup__input::placeholder {
-  color: #74819c;
 }
 
 .lesson-signup__error {
@@ -156,5 +157,4 @@
   cursor: none;
   pointer-events: none;
 }
-
 

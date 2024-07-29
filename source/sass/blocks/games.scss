@@ -43,11 +43,10 @@
 
     @media (min-width: variables.$desktop-width) {
       @include mixins.font-style(variables.$primary-font, 40px, 40px, 700);
+
       padding-left: 5px;
     }
   }
-
-
 
 
   @media (min-width: variables.$desktop-width) {
@@ -62,8 +61,8 @@
 }
 
 .games__title {
-
   @include mixins.font-style(variables.$secondary-font, 48px, 54px, 600);
+
   text-transform: uppercase;
   margin: 0;
 
@@ -81,11 +80,10 @@
 }
 
 .games__info-title {
-
   @include mixins.font-style(variables.$primary-font, 16px, 20px, 300);
+
   position: relative;
   margin-bottom: 5px;
-
 
 
   &::after {
@@ -100,6 +98,7 @@
 
   @media (min-width: variables.$tablet-width) {
     @include mixins.font-style(variables.$primary-font, 18px, 24px, 300);
+
     padding-left: 3px;
   }
 
@@ -115,12 +114,11 @@
       left: 5px;
     }
   }
-
-
 }
 
 .games__info-value {
   @include mixins.font-style(variables.$primary-font, 12px, 12px, 400);
+
   display: flex;
   flex-wrap: wrap;
   gap: 3px;
@@ -129,16 +127,21 @@
 
   @media (min-width: variables.$tablet-width) {
     @include mixins.font-style(variables.$primary-font, 14px, 22px, 400);
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 6px;
     margin-bottom: 9px;
-    &:last-child {    margin-bottom: 0;}
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: variables.$desktop-width) {
     @include mixins.font-style(variables.$primary-font, 14px, 22px, 400);
+
     margin-bottom: 19px;
   }
 }
@@ -153,14 +156,14 @@
 }
 
 .games__description {
-
   @include mixins.font-style(variables.$primary-font, 16px, 20px, 300);
+
   width: 173px;
   margin: 0;
 
   @media (min-width: variables.$tablet-width) {
-
     @include mixins.font-style(variables.$primary-font, 18px, 24px, 300);
+
     width: 220px;
     padding-right: 9px;
   }

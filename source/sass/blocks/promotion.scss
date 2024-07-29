@@ -16,15 +16,18 @@
 .promotion__title {
   text-align: center;
   margin-bottom: 40px;
+
   @include mixins.font-style(variables.$secondary-font, 32px, 32px, 600);
 
   @media (min-width: variables.$tablet-width) {
     margin-bottom: 35px;
+
     @include mixins.font-style(variables.$secondary-font, 42px, 42px, 600);
   }
 
   @media (min-width: variables.$desktop-width) {
     margin-bottom: 70px;
+
     @include mixins.font-style(variables.$secondary-font, 54px, 54px, 600);
   }
 }
@@ -60,7 +63,7 @@
   background-color: variables.$bg-banner-color;
   color: variables.$primary-white-color;
   text-align: center;
-  padding: 30px 0 35px 0;
+  padding: 30px 0 35px;
 
   @media (min-width: variables.$tablet-width) {
     text-align: start;
@@ -102,11 +105,13 @@
 }
 
 .promotion__card-title {
-  margin: 0 0 9px 0;
+  margin: 0 0 9px;
+
   @include mixins.font-style(variables.$primary-font, 22px, 22px, 700);
 
   @media (min-width: variables.$tablet-width) {
     margin-bottom: 20px;
+
     @include mixins.font-style(variables.$primary-font, 24px, 24px, 700);
   }
 
@@ -116,11 +121,13 @@
 }
 
 .promotion__card-price {
-  margin: 0 0 27px 0;
+  margin: 0 0 27px;
+
   @include mixins.font-style(variables.$primary-font, 16px, 20px, 400);
 
   @media (min-width: variables.$tablet-width) {
     margin-bottom: 40px;
+
     @include mixins.font-style(variables.$primary-font, 18px, 24px, 400);
   }
 }
@@ -134,11 +141,13 @@
 }
 
 .promotion__card-description {
-  margin: 0 0 28px 0;
+  margin: 0 0 28px;
+
   @include mixins.font-style(variables.$primary-font, 16px, 20px, 300);
 
   @media (min-width: variables.$tablet-width) {
     margin-bottom: 160px;
+
     @include mixins.font-style(variables.$primary-font, 18px, 24px, 300);
   }
 
@@ -152,9 +161,10 @@
   color: variables.$primary-white-color;
   text-decoration: none;
   text-transform: uppercase;
+
   @include mixins.font-style(variables.$primary-font, 14px, 14px, 700);
 
-  &:after {
+  &::after {
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -169,7 +179,7 @@
 .promotion__card-link--secondary {
   color: variables.$primary-dark-blue-color;
 
-  &:after {
+  &::after {
     background-color: variables.$divider-color;
   }
 }
@@ -216,6 +226,7 @@
 
 .promotion__item-title {
   margin: 0;
+
   @include mixins.font-style(variables.$primary-font, 22px, 22px, 700);
 
   @media (min-width: variables.$tablet-width) {
@@ -232,6 +243,7 @@
     text-align: start;
     margin-bottom: auto;
     width: 234px;
+
     @include mixins.font-style(variables.$primary-font, 16px, 24px, 300);
   }
 

@@ -27,6 +27,7 @@
 
   @media (min-width: variables.$tablet-width) {
     @include mixins.font-style(variables.$secondary-font, 54px, 54px, 400);
+
     margin-bottom: 36px;
   }
 }
@@ -60,7 +61,7 @@
   @media (min-width: variables.$desktop-width) {
     gap: 15px 130px;
 
-    &:after {
+    &::after {
       left: 51%;
     }
   }
@@ -84,17 +85,21 @@
 
 .company-contacts__item-title {
   @include mixins.font-style(variables.$primary-font, 20px, 20px, 400);
-  margin: 0 0 12px 0;
+
+  margin: 0 0 12px;
 
   @media (min-width: variables.$tablet-width) {
     @include mixins.font-style(variables.$primary-font, 24px, 24px, 400);
+
     margin-bottom: 5px;
   }
 }
 
 .company-contacts__item-description {
   display: block;
+
   @include mixins.font-style(variables.$primary-font, 14px, 20px, 400);
+
   text-decoration: none;
   color: variables.$primary-dark-color;
   margin: 0;
