@@ -120,6 +120,7 @@
 
   @media (min-width: variables.$desktop-width) {
     @include mixins.font-style(variables.$secondary-font, 92px, 110px, 800);
+
     margin-bottom: 10px;
     letter-spacing: 0.04em;
   }
