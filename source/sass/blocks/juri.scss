@@ -1,5 +1,4 @@
 @use "../global/variables";
-@use "../global/mixins";
 
 .juri {
   display: flex;
@@ -37,8 +36,9 @@
 
 .juri__card {
   position: relative;
-  background-color: #d3d3d3;
+  background-color: #919191;
   width: 260px;
+  min-height: 300px;
 }
 
 .juri__name {
@@ -49,6 +49,7 @@
   font-size: 22px;
   line-height: 22px;
   font-weight: 400;
+  text-align: center;
   min-width: 177px;
   color: variables.$primary-white-color;
   margin: 0;
@@ -56,10 +57,10 @@
 
 .juri__image-container {
   margin: 0;
-  text-align: center;
 }
 
 .juri__image {
+  display: block;
   width: 260px;
   height: 300px;
 }
@@ -93,8 +94,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #b6bdcc;
-  margin: 0;
-  margin-bottom: 34px;
+  margin: 0 0 34px 0;;
 }
 
 .juri__sub-card-list {
